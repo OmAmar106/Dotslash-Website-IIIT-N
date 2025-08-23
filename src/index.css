@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dotslash Coding Club Design System - Dark Theme with Glassmorphism */
+
+@layer base {
+  :root {
+    /* Dark Theme - Base Colors */
+    --background: 240 10% 3.9%;
+    --foreground: 210 100% 98%;
+
+    /* Glass Card Colors */
+    --card: 240 10% 8%;
+    --card-foreground: 210 100% 98%;
+    --glass-card: 240 15% 10%;
+    --glass-border: 240 20% 20%;
+
+    /* Popover Colors */
+    --popover: 240 10% 8%;
+    --popover-foreground: 210 100% 98%;
+
+    /* Brand Colors - Tech Inspired */
+    --primary: 280 100% 65%;
+    --primary-foreground: 210 100% 98%;
+    --primary-glow: 280 100% 75%;
+
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 210 100% 98%;
+
+    /* Accent Colors - Coding Theme */
+    --accent: 200 100% 60%;
+    --accent-foreground: 240 10% 8%;
+    --accent-secondary: 140 100% 60%;
+
+    /* Muted Colors */
+    --muted: 240 10% 12%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Status Colors */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 210 100% 98%;
+    --success: 140 65% 55%;
+    --warning: 45 90% 60%;
+
+    /* Border and Input */
+    --border: 240 15% 20%;
+    --input: 240 15% 15%;
+    --ring: 280 100% 65%;
+
+    /* Design System Extensions */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 65%), hsl(200 100% 60%));
+    --gradient-dotslash: linear-gradient(135deg, #ff8c00, #ffffff);
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(280 30% 8%));
+    --gradient-card: linear-gradient(135deg, hsl(240 15% 10% / 0.8), hsl(280 20% 12% / 0.6));
+    
+    /* Shadows */
+    --shadow-glass: 0 8px 32px hsl(280 100% 65% / 0.1);
+    --shadow-glow: 0 0 40px hsl(280 100% 65% / 0.3);
+    --shadow-card: 0 4px 20px hsl(240 10% 3.9% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+/* Glass Morphism Effects */
+@layer components {
+  .glass-card {
+    @apply bg-glass-card/80 backdrop-blur-xl border border-glass-border/30;
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-navbar {
+    @apply bg-background/80 backdrop-blur-xl border-b border-glass-border/30;
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .primary-gradient {
+    background: var(--gradient-primary);
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .dotslash-gradient {
+    background: var(--gradient-dotslash);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* Add this new class for the hero heading */
+  .hero-heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* For smaller screens, allow wrapping but keep Dotslash together */
+  @media (max-width: 768px) {
+    .hero-heading {
+      white-space: normal;
+    }
+    
+    .hero-heading .dotslash-gradient {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+  
+  .code-highlight {
+    @apply bg-muted/50 border-l-4 border-accent px-4 py-2 rounded-r-lg;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Emergency fix for stuck dialog overlays */
+body[style*="overflow: hidden"] {
+  overflow: auto !important;
+}
+
+/* Remove any stuck backdrop */
+[data-radix-dialog-overlay] {
+  display: none !important;
+}
+
+/* Force enable pointer events */
+* {
+  pointer-events: auto !important;
+}
