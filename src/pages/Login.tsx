@@ -9,115 +9,111 @@ import { Eye, EyeOff, Shield, Users, UserCheck } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import { GoogleLogin } from "@react-oauth/google";
 
 const Login = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [loginType, setLoginType] = useState("student");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const { login, isLoading } = useAuth();
-  const navigate = useNavigate();
+	const [showPassword, setShowPassword] = useState(false);
+	const [loginType, setLoginType] = useState("student");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const { login, isLoading } = useAuth();
+	const navigate = useNavigate();
 
-  const loginTypes = [
-    {
-      id: "admin",
-      name: "Admin",
-      icon: Shield,
-      description: "Full access to create resources and manage content",
-      color: "bg-red-500"
-    },
-    {
-      id: "student",
-      name: "College Student",
-      icon: Users,
-      description: "Login with college email, potential for core member role",
-      color: "bg-blue-500"
-    },
-    {
-      id: "guest",
-      name: "Guest",
-      icon: UserCheck,
-      description: "Limited access, cannot update leaderboard",
-      color: "bg-green-500"
-    }
-  ];
+	const loginTypes = [
+		{
+			id: "admin",
+			name: "Admin",
+			icon: Shield,
+			description: "Full access to create resources and manage content",
+			color: "bg-red-500"
+		},
+		{
+			id: "student",
+			name: "College Student",
+			icon: Users,
+			description: "Login with college email, potential for core member role",
+			color: "bg-blue-500"
+		},
+		{
+			id: "guest",
+			name: "Guest",
+			icon: UserCheck,
+			description: "Limited access, cannot update leaderboard",
+			color: "bg-green-500"
+		}
+	];
 
-  const handleGoogleLogin = () => {
-    // Placeholder for Google OAuth integration
-    console.log("Google login initiated for:", loginType);
-  };
+	const handleGoogleLogin = () => {
+		console.log("Google login initiated for:", loginType);
+	};
 
-  const handleEmailLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email || !password) {
-      toast.error("Please fill in all fields");
-      return;
-    }
+	const handleEmailLogin = async (e: React.FormEvent) => {
+		e.preventDefault();
 
-    const success = await login(email, password);
-    
-    if (success) {
-      toast.success("Welcome to Dotslash <./>");
-      navigate("/");
-    } else {
-      toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
-    }
-  };
+		if (!email || !password) {
+			toast.error("Please fill in all fields");
+			return;
+		}
 
-  return (
-    <div className="min-h-screen pt-20 px-4 flex items-center justify-center">
-      <div className="w-full max-w-md">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="flex justify-center mb-4">
-          </div>
-          <h1 className="text-3xl font-bold text-gradient mb-2">Welcome to <span className="dotslash-gradient">Dotslash &lt;./&gt;</span></h1>
-          <p className="text-muted-foreground">Choose your login type to continue</p>
-        </div>
+		const success = await login(email, password);
 
-        {/* Login Type Selection */}
-        <Card className="glass-card p-6 mb-6">
-          <h2 className="text-lg font-semibold mb-4 text-center">Select Login Type</h2>
-          <div className="space-y-3">
-            {loginTypes.map((type) => (
-              <div
-                key={type.id}
-                onClick={() => setLoginType(type.id)}
-                className={`p-4 rounded-lg border cursor-pointer transition-all duration-200 ${
-                  loginType === type.id
-                    ? "border-primary bg-primary/10 glow-effect"
-                    : "border-glass-border/30 hover:border-glass-border/50 hover:bg-muted/20"
-                }`}
-              >
-                <div className="flex items-center space-x-3">
-                  <div className={`p-2 rounded-full ${type.color} bg-opacity-20`}>
-                    <type.icon className={`w-5 h-5 text-white`} />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-2">
-                      <span className="font-medium">{type.name}</span>
-                      {loginType === type.id && (
-                        <Badge className="bg-primary text-primary-foreground border-0">
-                          Selected
-                        </Badge>
-                      )}
-                    </div>
-                    <p className="text-sm text-muted-foreground">{type.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
+		if (success) {
+			toast.success("Welcome to Dotslash <./>");
+			navigate("/");
+		} else {
+			toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
+		}
+	};
 
-        {/* Login Form */}
-        <Card className="glass-card p-6">
-          <Tabs defaultValue="google" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
-              <TabsTrigger value="google">Google Login</TabsTrigger>
-              <TabsTrigger value="email">Email Login</TabsTrigger>
-            </TabsList>
+	return (
+		<div className="min-h-screen pt-20 px-4 flex items-center justify-center">
+			<div className="w-full max-w-md">
+				<div className="text-center mb-8">
+					<div className="flex justify-center mb-4">
+					</div>
+					<h1 className="text-3xl font-bold text-gradient mb-2">Welcome to <span className="dotslash-gradient">Dotslash &lt;./&gt;</span></h1>
+					<p className="text-muted-foreground">Choose your login type to continue</p>
+				</div>
+
+				<Card className="glass-card p-6 mb-6">
+					<h2 className="text-lg font-semibold mb-4 text-center">Select Login Type</h2>
+					<div className="space-y-3">
+						{loginTypes.map((type) => (
+							<div
+								key={type.id}
+								onClick={() => setLoginType(type.id)}
+								className={`p-4 rounded-lg border cursor-pointer transition-all duration-200 ${loginType === type.id
+									? "border-primary bg-primary/10 glow-effect"
+									: "border-glass-border/30 hover:border-glass-border/50 hover:bg-muted/20"
+									}`}
+							>
+								<div className="flex items-center space-x-3">
+									<div className={`p-2 rounded-full ${type.color} bg-opacity-20`}>
+										<type.icon className={`w-5 h-5 text-white`} />
+									</div>
+									<div className="flex-1">
+										<div className="flex items-center space-x-2">
+											<span className="font-medium">{type.name}</span>
+											{loginType === type.id && (
+												<Badge className="bg-primary text-primary-foreground border-0">
+													Selected
+												</Badge>
+											)}
+										</div>
+										<p className="text-sm text-muted-foreground">{type.description}</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</Card>
+
+				<Card className="glass-card p-6">
+					<Tabs defaultValue="google" className="w-full">
+						<TabsList className="grid w-full grid-cols-2 mb-6">
+							<TabsTrigger value="google">Google Login</TabsTrigger>
+							<TabsTrigger value="email">Email Login</TabsTrigger>
+						</TabsList>
 
             <TabsContent value="google" className="space-y-4">
               <div className="text-center space-y-4">
@@ -129,7 +125,7 @@ const Login = () => {
                     : `Quick and secure login for ${loginTypes.find(t => t.id === loginType)?.name.toLowerCase()}`
                   }
                 </p>
-                <Button 
+                {/* <Button 
                   onClick={handleGoogleLogin}
                   className="w-full bg-gradient-primary hover:opacity-90"
                   size="lg"
@@ -141,77 +137,91 @@ const Login = () => {
                     <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                   </svg>
                   Continue with Google
-                </Button>
+                </Button> */}
+				<GoogleLogin
+					onSuccess={async (credentialResponse) => {
+						if (!credentialResponse?.credential) return;
+						const token = credentialResponse.credential; 
+						const base64Url = token.split('.')[1];
+						const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+						const userData = JSON.parse(window.atob(base64));
+						console.log("Google login success");
+						console.log("Email:", userData.email);
+						console.log("ID Token:", token);
+					}}
+					onError={() => {
+						console.log("Google login failed");
+					}}
+					/>
+
               </div>
             </TabsContent>
 
-            <TabsContent value="email" className="space-y-4">
-              <form onSubmit={handleEmailLogin} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder={loginType === "student" ? "your.name@iiitn.ac.in" : "Enter your email"}
-                    className="bg-input border-glass-border/30"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <div className="relative">
-                    <Input
-                      id="password"
-                      type={showPassword ? "text" : "password"}
-                      placeholder="Enter your password"
-                      className="bg-input border-glass-border/30 pr-10"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      required
-                    />
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
-                      onClick={() => setShowPassword(!showPassword)}
-                    >
-                      {showPassword ? (
-                        <EyeOff className="h-4 w-4 text-muted-foreground" />
-                      ) : (
-                        <Eye className="h-4 w-4 text-muted-foreground" />
-                      )}
-                    </Button>
-                  </div>
-                </div>
+						<TabsContent value="email" className="space-y-4">
+							<form onSubmit={handleEmailLogin} className="space-y-4">
+								<div className="space-y-2">
+									<Label htmlFor="email">Email</Label>
+									<Input
+										id="email"
+										type="email"
+										placeholder={loginType === "student" ? "your.name@iiitn.ac.in" : "Enter your email"}
+										className="bg-input border-glass-border/30"
+										value={email}
+										onChange={(e) => setEmail(e.target.value)}
+										required
+									/>
+								</div>
 
-                <Button type="submit" className="w-full bg-gradient-primary hover:opacity-90" size="lg" disabled={isLoading}>
-                  {isLoading ? "Signing In..." : "Sign In"}
-                </Button>
-              </form>
+								<div className="space-y-2">
+									<Label htmlFor="password">Password</Label>
+									<div className="relative">
+										<Input
+											id="password"
+											type={showPassword ? "text" : "password"}
+											placeholder="Enter your password"
+											className="bg-input border-glass-border/30 pr-10"
+											value={password}
+											onChange={(e) => setPassword(e.target.value)}
+											required
+										/>
+										<Button
+											type="button"
+											variant="ghost"
+											size="sm"
+											className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+											onClick={() => setShowPassword(!showPassword)}
+										>
+											{showPassword ? (
+												<EyeOff className="h-4 w-4 text-muted-foreground" />
+											) : (
+												<Eye className="h-4 w-4 text-muted-foreground" />
+											)}
+										</Button>
+									</div>
+								</div>
 
-              <div className="text-center space-y-2">
-                <Button variant="link" className="text-sm text-muted-foreground">
-                  Forgot your password?
-                </Button>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </Card>
+								<Button type="submit" className="w-full bg-gradient-primary hover:opacity-90" size="lg" disabled={isLoading}>
+									{isLoading ? "Signing In..." : "Sign In"}
+								</Button>
+							</form>
 
-        {/* Info Box */}
-        <Card className="glass-card p-4 mt-6">
-          <div className="text-center text-sm text-muted-foreground">
-            <p className="mb-2">🔒 Your data is secure and protected</p>
-            <p>Backend integration ready - API endpoints will be connected soon</p>
-          </div>
-        </Card>
-      </div>
-    </div>
-  );
+							<div className="text-center space-y-2">
+								<Button variant="link" className="text-sm text-muted-foreground">
+									Forgot your password?
+								</Button>
+							</div>
+						</TabsContent>
+					</Tabs>
+				</Card>
+
+				<Card className="glass-card p-4 mt-6">
+					<div className="text-center text-sm text-muted-foreground">
+						<p className="mb-2">🔒 Your data is secure and protected</p>
+					</div>
+				</Card>
+			</div>
+		</div>
+	);
 };
 
 export default Login;
