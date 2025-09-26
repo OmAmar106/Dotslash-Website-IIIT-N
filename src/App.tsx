@@ -31,7 +31,7 @@ const App = () => (
         <AuthProvider>
           <div className="min-h-screen bg-background text-foreground">
             <Navbar />
-            {/* <FloatingLogo /> */}
+
             <main>
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -42,7 +42,6 @@ const App = () => (
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/login" element={<Login />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

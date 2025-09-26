@@ -10,18 +10,15 @@ const ChatBot = () => {
   ]);
   const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [inputHeight, setInputHeight] = useState(40); // Track input height
+  const [inputHeight, setInputHeight] = useState(40);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Auto-resize textarea as user types
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setInputText(value);
     
-    // Reset height to auto to get the correct scrollHeight
     e.target.style.height = 'auto';
     
-    // Calculate new height (min 40px, max 120px)
     const newHeight = Math.min(Math.max(e.target.scrollHeight, 40), 120);
     setInputHeight(newHeight);
     e.target.style.height = `${newHeight}px`;
@@ -30,19 +27,16 @@ const ChatBot = () => {
   const sendMessage = () => {
     if (!inputText.trim()) return;
 
-    // Add user message
     const userMessage = { id: Date.now(), text: inputText, isBot: false };
     setMessages(prev => [...prev, userMessage]);
     setInputText("");
     setIsLoading(true);
     
-    // Reset input height
     setInputHeight(40);
     if (textareaRef.current) {
       textareaRef.current.style.height = '40px';
     }
 
-    // Simulate bot response
     setTimeout(() => {
       const botMessage = { 
         id: Date.now() + 1, 
@@ -56,7 +50,6 @@ const ChatBot = () => {
 
   return (
     <>
-      {/* Chat Button */}
       <Button
         onClick={() => setIsOpen(true)}
         className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow ${
@@ -66,10 +59,9 @@ const ChatBot = () => {
         <MessageCircle className="w-6 h-6" />
       </Button>
 
-      {/* Chat Window */}
       {isOpen && (
         <Card className={`fixed bottom-6 right-6 z-50 w-96 h-[500px] glass-card animate-fade-in flex flex-col`}>
-          {/* Header */}
+
           <div className="flex items-center justify-between p-4 border-b border-glass-border/30 flex-shrink-0">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center">
@@ -90,7 +82,6 @@ const ChatBot = () => {
             </Button>
           </div>
 
-          {/* Messages - Now scrollable with flex-1 */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4 min-h-0">
             {messages.map((message) => (
               <div
@@ -117,7 +108,6 @@ const ChatBot = () => {
             )}
           </div>
 
-          {/* Input - Now with auto-expanding textarea */}
           <div className="p-4 border-t border-glass-border/30 flex-shrink-0">
             <div className="flex space-x-2 items-end">
               <textarea
