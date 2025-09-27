@@ -10,7 +10,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { GoogleLogin } from "@react-oauth/google";
-import * as jwt_decode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false);
@@ -66,7 +66,7 @@ const Login = () => {
 
 		if (token) {
 			localStorage.setItem("authToken", token);
-    		const userData = jwt_decode(token);
+    		const userData = jwtDecode(token);
 			toast.success("Welcome to Dotslash <./>");
 			navigate("/");
 		} else {
@@ -80,7 +80,7 @@ const Login = () => {
 
 		if (token) {
 			localStorage.setItem("authToken", token);
-    		const userData = jwt_decode(token);
+    		const userData = jwtDecode(token);
 			toast.success("Welcome to Dotslash <./>");
 			navigate("/");
 		} else {
@@ -161,7 +161,7 @@ const Login = () => {
 							if(userData.email.endsWith("@iiitn.ac.in")){}
 							else{toast.error("Please use iiitn college mail id.");return;}
 						}
-						handleGoogleLogin(userData)
+						handleGoogleLogin(token)
 					}}
 					onError={() => {
 						// console.log("Google login failed");
