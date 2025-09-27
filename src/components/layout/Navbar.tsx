@@ -57,19 +57,13 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            {/* Authentication */}
-            {user ? (
-              <div className="ml-4">
-                <ProfileDropdown />
-              </div>
-            ) : (
-              <Link to="/login">
-                <Button size="sm" className="ml-4 bg-gradient-primary hover:opacity-90 transition-opacity">
-                  Login
-                </Button>
-              </Link>
-            )}
+
+
+
+            
           </div>
+
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -101,21 +95,10 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-2 border-t border-glass-border/30">
-              {/* Authentication */}
-              {user ? (
-                <div className="flex items-center justify-center">
-                  <ProfileDropdown />
-                </div>
-              ) : (
-                <Link to="/login" onClick={() => setIsOpen(false)}>
-                  <Button size="sm" className="w-full bg-gradient-primary hover:opacity-90">
-                    <Code className="w-4 h-4 mr-2" />
-                    Login
-                  </Button>
-                </Link>
-              )}
-            </div>
+
+
+
+
           </div>
         )}
       </div>

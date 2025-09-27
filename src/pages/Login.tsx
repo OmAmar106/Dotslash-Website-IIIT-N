@@ -45,12 +45,10 @@ const Login = () => {
 	];
 
 	const ac_login = async (email,password) => {
-		// send a post request
 		return "true";
 	}
 
 	const Google_login = async (userData) => {
-		// send a post request along with the token to verify
 		return "true";
 	}
 
@@ -70,7 +68,7 @@ const Login = () => {
 			toast.success("Welcome to Dotslash <./>");
 			navigate("/");
 		} else {
-			toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
+			// toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
 		}
 	};
 
@@ -84,7 +82,7 @@ const Login = () => {
 			toast.success("Welcome to Dotslash <./>");
 			navigate("/");
 		} else {
-			toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
+			// toast.error("Invalid credentials. Try: student@iiitn.ac.in / 12345678");
 		}
 	};
 

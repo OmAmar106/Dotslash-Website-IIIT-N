@@ -16,18 +16,17 @@ const Footer = () => {
                 <Mail className="w-4 h-4 text-accent" />
                 <span>dotslash@iiitn.ac.in</span>
               </div>
-              <div className="flex items-center space-x-3 text-muted-foreground">
+              {/* <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="w-4 h-4 text-accent" />
                 <span>+91 12345 67890</span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span>IIIT Nagpur, Maharashtra</span>
+                <span>IIIT Nagpur, Butibori, Maharashtra</span>
               </div>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gradient">Quick Links</h3>
             <div className="space-y-2">
@@ -43,17 +42,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gradient">Follow Us</h3>
             <div className="flex space-x-3">
-              <Button size="sm" variant="outline" className="p-2">
+              <Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://github.com/OmAmar106/Dotslash-Website-IIIT-N", "_blank")}>
                 <Github className="w-4 h-4" />
               </Button>
-              <Button size="sm" variant="outline" className="p-2">
+              <Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://www.instagram.com/thedotslashcommunity/", "_blank")}>
                 <Instagram className="w-4 h-4" />
               </Button>
-              <Button size="sm" variant="outline" className="p-2">
+              <Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://www.instagram.com/thedotslashcommunity/", "_blank")}>
                 <Linkedin className="w-4 h-4" />
               </Button>
             </div>
@@ -65,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-glass-border/30 mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Dotslash - IIIT Nagpur Coding Club. Built with ❤️ for learning.
+            © 2025 Dotslash - IIIT Nagpur Coding Club.
           </p>
         </div>
       </div>
