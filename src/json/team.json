@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Shubham Jee Shrivastava",
+    "role": "Club Head",
+    "department": "3rd Year CSD",
+    "bio": "Undefeated in 'Mini Militia'",
+    "avatar": "/src/assets/profile_pictures/Shubham_Jee_Shrivastava_photo.jpeg",
+    "interests": ["Mini Militia", "Algorithms", "CP", "Hackathons"],
+    "achievements": ["Specialist @ Codeforces", "4 ⭐ at Codechef"],
+    "social": {
+      "email": "rajesh@iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Om Amar",
+    "role": "Core Member",
+    "year": "3rd Year CSE",
+    "bio": "Love doing Competitive Programming in Python ;)",
+    "avatar": "/src/assets/profile_pictures/Om_Amar_photo.jpeg",
+    "interests": ["Badminton", "Table Tennis", "CP", ""],
+    "achievements": ["Candidate Master @ Codeforces", "6 ⭐ at Codechef"],
+    "social": {
+      "email": "ananya@student.iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Arjun Patel",
+    "role": "Vice President",
+    "year": "3rd Year CSE",
+    "bio": "Machine learning enthusiast and algorithm optimizer. Organizing workshops and coding contests.",
+    "avatar": "👨‍💻",
+    "interests": ["Machine Learning", "Python", "Algorithms"],
+    "achievements": ["Codeforces Expert", "Kaggle Expert"],
+    "social": {
+      "email": "arjun@student.iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Priya Singh",
+    "role": "Technical Head",
+    "year": "2nd Year CSE",
+    "bio": "Frontend developer and UI/UX designer. Creating amazing experiences for club members.",
+    "avatar": "👩‍🎨",
+    "interests": ["React", "UI/UX", "JavaScript"],
+    "achievements": ["Hackathon Winner", "Open Source Contributor"],
+    "social": {
+      "email": "priya@student.iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Rohit Verma",
+    "role": "Event Coordinator",
+    "year": "2nd Year CSE",
+    "bio": "Event management expert and community builder. Organizing engaging events and workshops.",
+    "avatar": "👨‍💼",
+    "interests": ["Event Management", "Public Speaking", "Python"],
+    "achievements": ["TEDx Speaker", "Event Organizer"],
+    "social": {
+      "email": "rohit@student.iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Sneha Gupta",
+    "role": "Content Creator",
+    "year": "1st Year CSE",
+    "bio": "Creating educational content and tutorials for the coding community.",
+    "avatar": "👩‍📚",
+    "interests": ["Content Writing", "Video Editing", "Java"],
+    "achievements": ["Tech Blogger", "YouTube Creator"],
+    "social": {
+      "email": "sneha@student.iiitn.ac.in",
+      "linkedin": "#",
+      "github": "#"
+    }
+  }
+]
