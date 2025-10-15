@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Data Structures and Algorithms Fundamentals",
+        "description": "Learn the basics of DSA with interactive examples and practice problems.",
+        "level": "beginner",
+        "type": "video",
+        "duration": "45 min",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "DSA",
+            "Arrays",
+            "Linked Lists"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Advanced Graph Algorithms",
+        "description": "Master complex graph algorithms including shortest path and minimum spanning tree.",
+        "level": "advanced",
+        "type": "blog",
+        "duration": "30 min read",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "Graphs",
+            "Algorithms",
+            "Competition"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Dynamic Programming Patterns",
+        "description": "Comprehensive guide to DP patterns with solved examples and practice problems.",
+        "level": "intermediate",
+        "type": "video",
+        "duration": "1h 20min",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "DP",
+            "Optimization",
+            "Problem Solving"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Web Development with React",
+        "description": "Build modern web applications using React, TypeScript, and modern tools.",
+        "level": "intermediate",
+        "type": "course",
+        "duration": "3h 45min",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "React",
+            "TypeScript",
+            "Web Dev"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Competitive Programming Handbook",
+        "description": "Complete guide to competitive programming with strategies and techniques.",
+        "level": "beginner",
+        "type": "ebook",
+        "duration": "200 pages",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "Contests",
+            "Strategies"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Machine Learning Fundamentals",
+        "description": "Introduction to ML concepts with Python implementations and real-world examples.",
+        "level": "intermediate",
+        "type": "course",
+        "duration": "2h 30min",
+        "url": "#",
+        "downloadUrl": "#",
+        "tags": [
+            "ML",
+            "Python",
+            "AI"
+        ]
+    }
+]

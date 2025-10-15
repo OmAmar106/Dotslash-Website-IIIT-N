@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "title": "Two Sum",
+        "difficulty": "easy",
+        "topic": "Arrays",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "description": "Given an array of integers and a target, find two numbers that add up to target.",
+        "tags": [
+            "Hash Table",
+            "Arrays"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Binary Tree Inorder Traversal",
+        "difficulty": "medium",
+        "topic": "Trees",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "description": "Given the root of a binary tree, return the inorder traversal of its nodes' values.",
+        "tags": [
+            "Tree",
+            "DFS",
+            "Stack"
+        ],
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)"
+    },
+    {
+        "id": 3,
+        "title": "Maximum Subarray",
+        "difficulty": "easy",
+        "topic": "Dynamic Programming",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "description": "Find the contiguous subarray with the largest sum.",
+        "tags": [
+            "DP",
+            "Arrays",
+            "Kadane's Algorithm"
+        ],
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)"
+    },
+    {
+        "id": 4,
+        "title": "Valid Parentheses",
+        "difficulty": "easy",
+        "topic": "Stack",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/valid-parentheses/",
+        "description": "Determine if the input string of parentheses is valid.",
+        "tags": [
+            "Stack",
+            "String"
+        ],
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)"
+    },
+    {
+        "id": 5,
+        "title": "Longest Common Subsequence",
+        "difficulty": "medium",
+        "topic": "Dynamic Programming",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/longest-common-subsequence/",
+        "description": "Find the length of the longest common subsequence between two strings.",
+        "tags": [
+            "DP",
+            "String"
+        ],
+        "timeComplexity": "O(m*n)",
+        "spaceComplexity": "O(m*n)"
+    },
+    {
+        "id": 6,
+        "title": "Graph Valid Tree",
+        "difficulty": "hard",
+        "topic": "Graphs",
+        "platform": "LeetCode",
+        "link": "https://leetcode.com/problems/graph-valid-tree/",
+        "description": "Check if given edges form a valid tree.",
+        "tags": [
+            "Graph",
+            "DFS",
+            "Union Find"
+        ],
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)"
+    },
+    {
+        "id": 7,
+        "title": "Merge Sort",
+        "difficulty": "medium",
+        "topic": "Sorting",
+        "platform": "Practice",
+        "link": "#",
+        "description": "Implement merge sort algorithm.",
+        "tags": [
+            "Sorting",
+            "Divide and Conquer"
+        ],
+        "timeComplexity": "O(n log n)",
+        "spaceComplexity": "O(n)"
+    },
+    {
+        "id": 8,
+        "title": "Binary Search",
+        "difficulty": "easy",
+        "topic": "Searching",
+        "platform": "Practice",
+        "link": "#",
+        "description": "Implement binary search in a sorted array.",
+        "tags": [
+            "Binary Search",
+            "Arrays"
+        ],
+        "timeComplexity": "O(log n)",
+        "spaceComplexity": "O(1)"
+    }
+]
