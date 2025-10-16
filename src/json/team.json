@@ -5,7 +5,7 @@
     "role": "Club Head",
     "department": "3rd Year CSD",
     "bio": "Undefeated in 'Mini Militia'",
-    "avatar": "/src/assets/profile_pictures/Shubham_Jee_Shrivastava_photo.jpeg",
+    "avatar": "/profile_pictures/Shubham_Jee_Shrivastava_photo.jpeg",
     "interests": ["Mini Militia", "Algorithms", "CP", "Hackathons"],
     "achievements": ["Specialist @ Codeforces", "4 ⭐ @ Codechef"],
     "social": {
@@ -20,7 +20,7 @@
     "role": "Core Member",
     "year": "3rd Year CSE",
     "bio": "Love doing Competitive Programming in Python ;)",
-    "avatar": "/src/assets/profile_pictures/Om_Amar_photo.jpeg",
+    "avatar": "/profile_pictures/Om_Amar_photo.jpeg",
     "interests": ["Badminton", "Table Tennis", "CP"],
     "achievements": ["Candidate Master @ Codeforces", "6 ⭐ @ Codechef","Guardian @ Leetcode","ICPC and IICPC Regionalist"],
     "social": {
