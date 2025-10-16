@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "title": "Competitive Programming Workshop",
+        "description": "Learn advanced algorithms and data structures for competitive programming.",
+        "date": "20-12-2024",
+        "time": "2:00 PM - 5:00 PM",
+        "location": "CS Lab 1, IIIT Nagpur",
+        "type": "workshop",
+        "status": "upcoming",
+        "participants": 45,
+        "maxParticipants": 60,
+        "instructor": "Dr. Rajesh Kumar",
+        "tags": [
+            "Algorithms",
+            "DSA",
+            "CP"
+        ],
+        "image": "🏆"
+    },
+    {
+        "id": 2,
+        "title": "Hack-a-thon 2024",
+        "description": "24-hour hackathon to build innovative solutions for real-world problems.",
+        "date": "25-12-2024",
+        "time": "9:00 AM - 9:00 PM",
+        "location": "Main Auditorium, IIIT Nagpur",
+        "type": "competition",
+        "status": "upcoming",
+        "participants": 120,
+        "maxParticipants": 150,
+        "instructor": "Dotslash Team",
+        "tags": [
+            "Hackathon",
+            "Innovation",
+            "Team Work"
+        ],
+        "image": "💻"
+    },
+    {
+        "id": 4,
+        "title": "AI/ML Workshop Series",
+        "description": "Introduction to machine learning concepts and practical implementations.",
+        "date": "15-11-2024",
+        "time": "3:00 PM - 6:00 PM",
+        "location": "AI Lab, IIIT Nagpur",
+        "type": "workshop",
+        "status": "completed",
+        "participants": 95,
+        "maxParticipants": 100,
+        "instructor": "Arjun Patel",
+        "tags": [
+            "AI",
+            "ML",
+            "Python"
+        ],
+        "image": "🤖"
+    },
+    {
+        "id": 5,
+        "title": "Code Golf Championship",
+        "description": "Write the shortest code possible to solve programming challenges.",
+        "date": "10-11-2024",
+        "time": "7:00 PM - 10:00 PM",
+        "location": "Online",
+        "type": "competition",
+        "status": "completed",
+        "participants": 134,
+        "maxParticipants": 200,
+        "instructor": "Dotslash Community",
+        "tags": [
+            "Code Golf",
+            "Fun",
+            "Creativity"
+        ],
+        "image": "⛳"
+    },
+    {
+        "id": 6,
+        "title": "Open Source Contribution Drive",
+        "description": "Learn how to contribute to open source projects and make your first PR.",
+        "date": "25-10-2024",
+        "time": "4:00 PM - 7:00 PM",
+        "location": "CS Lab 1, IIIT Nagpur",
+        "type": "workshop",
+        "status": "completed",
+        "participants": 67,
+        "maxParticipants": 80,
+        "instructor": "Priya Singh",
+        "tags": [
+            "Open Source",
+            "Git",
+            "GitHub"
+        ],
+        "image": "🌐"
+    }
+]

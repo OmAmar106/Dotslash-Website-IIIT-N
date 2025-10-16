@@ -159,19 +159,19 @@ const Resources = () => {
 				<div className="mt-16">
 					<h2 className="text-3xl font-bold text-gradient text-center mb-8">Featured Video Tutorial</h2>
 					<Card className="glass-card p-6 max-w-4xl mx-auto">
-						<div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4">
-							<div className="text-center">
-								<Video className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
-								<p className="text-muted-foreground">Video player will be embedded here</p>
-								<p className="text-sm text-muted-foreground mt-2">
-									Featured: "Advanced Data Structures for Competitive Programming"
-								</p>
-							</div>
+						<div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+							<iframe
+								className="w-full h-full rounded-lg"
+								src="https://www.youtube.com/embed/xAeiXy8-9Y8?si=gNR2iwJ8cKVZOr0h"
+								title="YouTube video player"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
+								allowFullScreen
+							></iframe>
 						</div>
 						<div className="text-center">
-							<h3 className="text-xl font-semibold mb-2">Advanced Data Structures for Competitive Programming</h3>
+							<h3 className="text-xl font-semibold mb-2">New to CP?</h3>
 							<p className="text-muted-foreground mb-4">
-								Learn segment trees, fenwick trees, and other advanced data structures essential for competitive programming.
+								Learn how to use Codeforces and get started with Competitive Programming.
 							</p>
 							<Button className="bg-gradient-primary hover:opacity-90">
 								Watch Now
@@ -179,6 +179,7 @@ const Resources = () => {
 						</div>
 					</Card>
 				</div>
+
 
  				<div className="mt-16">
 					<Card className="glass-card p-8 text-center">
