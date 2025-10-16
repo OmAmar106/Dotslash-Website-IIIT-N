@@ -29,16 +29,6 @@ const Leaderboard = () => {
     }
   };
 
-  const getBadgeColor = (badge: string) => {
-    switch (badge) {
-      case "Legend": return "bg-gradient-to-r from-yellow-500 to-orange-500";
-      case "Master": return "bg-gradient-to-r from-purple-500 to-pink-500";
-      case "Expert": return "bg-gradient-to-r from-blue-500 to-cyan-500";
-      case "Specialist": return "bg-gradient-to-r from-green-500 to-emerald-500";
-      default: return "bg-muted";
-    }
-  };
-
   const processedData = useMemo(() => {
     let data = leaderboardData.filter(
       user =>
@@ -51,6 +41,13 @@ const Leaderboard = () => {
     data.sort((a, b) => {
       const aScore = a[sortField] ?? 0;
       const bScore = b[sortField] ?? 0;
+
+      if (sortField === "totalScore" && aScore === bScore) {
+        const aSuffix = -parseInt(a.username.slice(-3)) || 0;
+        const bSuffix = -parseInt(b.username.slice(-3)) || 0;
+        return sortAsc ? aSuffix - bSuffix : bSuffix - aSuffix;
+      }
+
       return sortAsc ? aScore - bScore : bScore - aScore;
     });
 
@@ -98,7 +95,6 @@ const Leaderboard = () => {
           </div>
         </Card>
 
-        {/* Top 3 Podium */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {processedData.slice(0, 3).map(user => (
             <Card
@@ -120,12 +116,10 @@ const Leaderboard = () => {
               <h3 className="text-xl font-semibold mb-1">{user.name}</h3>
               <p className="text-muted-foreground text-sm mb-3">@{user.username}</p>
               <div className="text-3xl font-bold text-gradient mb-2">{user.totalScore}</div>
-              <Badge className={`${getBadgeColor(user.badge)} text-white border-0`}>{user.badge}</Badge>
             </Card>
           ))}
         </div>
 
-        {/* Full Leaderboard */}
         <Card className="glass-card">
           <div className="p-6">
             <div className="flex items-center justify-between mb-6">
@@ -152,11 +146,11 @@ const Leaderboard = () => {
                     <th className="text-left py-4 px-2">Rank</th>
                     <th className="text-left py-4 px-2">User</th>
                     <th className="text-center py-4 px-2">Total Score</th>
+                    <th className="text-center py-4 px-2">Flash Code</th>
                     <th className="text-center py-4 px-2">Contest 1</th>
                     <th className="text-center py-4 px-2">Contest 2</th>
                     <th className="text-center py-4 px-2">Contest 3</th>
                     <th className="text-center py-4 px-2">Contest 4</th>
-                    <th className="text-left py-4 px-2">Badge</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -165,40 +159,36 @@ const Leaderboard = () => {
                       <td className="py-4 px-2">{getRankIcon(user.rank)}</td>
                       <td className="py-4 px-2">
                         <div className="flex items-center">
-						<div className="relative w-10 h-10 mr-3">
-							{user.rank === 1 && (
-							<span className="absolute -top-5 left-1/2 transform -translate-x-1/2 text-lg">
-								👑
-							</span>
-							)}
-							<img
-							src={user.avatar}
-							alt={user.name}
-							className="w-10 h-10 rounded-full object-cover"
-							/>
-						</div>
-						<div>
-							<div className="font-medium">{user.name}</div>
-							<div className="text-sm text-muted-foreground">@{user.username}</div>
-						</div>
-						</div>
-
+                          <div className="relative w-10 h-10 mr-3">
+                            {user.rank === 1 && (
+                              <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 text-lg">
+                                👑
+                              </span>
+                            )}
+                            <img
+                              src={user.avatar}
+                              alt={user.name}
+                              className="w-10 h-10 rounded-full object-cover"
+                            />
+                          </div>
+                          <div>
+                            <div className="font-medium">{user.name}</div>
+                            <div className="text-sm text-muted-foreground">@{user.username}</div>
+                          </div>
+                        </div>
                       </td>
                       <td className="py-4 px-2 text-center"><span className="text-xl font-bold text-gradient">{user.totalScore}</span></td>
+                      <td className="py-4 px-2 text-center text-muted-foreground">{user['Flash Code']}</td>
                       <td className="py-4 px-2 text-center text-muted-foreground">{user['Community Contest 1']}</td>
                       <td className="py-4 px-2 text-center text-muted-foreground">{user['Community Contest 2']}</td>
                       <td className="py-4 px-2 text-center text-muted-foreground">{user['Community Contest 3']}</td>
                       <td className="py-4 px-2 text-center text-muted-foreground">{user['Community Contest 4']}</td>
-                      <td className="py-4 px-2">
-                        <Badge className={`${getBadgeColor(user.badge)} text-white border-0`}>{user.badge}</Badge>
-                      </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            {/* Pagination */}
             <div className="flex justify-center mt-4 gap-2">
               {Array.from({ length: totalPages }, (_, i) => (
                 <Button

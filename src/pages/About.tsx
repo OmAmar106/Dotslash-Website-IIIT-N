@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Users, Target, Award } from "lucide-react";
 import teamMembers from "@/json/team.json";
+import { SiCodechef, SiCodeforces, SiLeetcode, SiLinkedin, SiGithub } from "react-icons/si";
 
 const About = () => {
 
@@ -31,7 +32,7 @@ const About = () => {
 					<Card className="glass-card p-8">
 						<h2 className="text-2xl font-bold text-gradient mb-4">Our Mission</h2>
 						<p className="text-muted-foreground leading-relaxed">
-							To create an inclusive learning environment where students can develop their programming skills and 
+							To create an inclusive learning environment where students can develop their programming skills and
 							engage in competitive coding.
 						</p>
 					</Card>
@@ -104,23 +105,58 @@ const About = () => {
 								)}
 
 								<div className="flex justify-center space-x-3 pt-4 border-t border-glass-border/30">
-									<Button size="sm" variant="outline" className="p-2">
-										<Mail className="w-4 h-4" />
-									</Button>
-									<Button size="sm" variant="outline" className="p-2">
-										<Linkedin className="w-4 h-4" />
-									</Button>
-									<Button size="sm" variant="outline" className="p-2">
-										<Github className="w-4 h-4" />
-									</Button>
+									{member.social?.email && (
+										<a href={`mailto:${member.social.email}`} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<Mail className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+
+									{member.social?.github && (
+										<a href={member.social.github} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<Github className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+
+									{member.social?.codechef && (
+										<a href={member.social.codechef} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<SiCodechef className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+									{member.social?.codeforces && (
+										<a href={member.social.codeforces} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<SiCodeforces className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+									{member.social?.leetcode && (
+										<a href={member.social.leetcode} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<SiLeetcode className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+
+									{member.social?.linkedin && (
+										<a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+											<Button size="sm" variant="outline" className="p-2">
+												<Linkedin className="w-4 h-4" />
+											</Button>
+										</a>
+									)}
+									
 								</div>
 							</Card>
 						))}
 					</div>
 				</div>
 
-
-				
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
 					{clubStats.map((stat, index) => (
 						<Card key={index} className="glass-card p-6 text-center group hover:glow-effect transition-all duration-300">

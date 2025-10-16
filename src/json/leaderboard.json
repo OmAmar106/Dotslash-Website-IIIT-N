@@ -1,57 +1,101 @@
 [
 	{
-		"name": "Arjun Sharma",
-		"username": "BT2XXXXXXX",
-		"totalScore": 0,
+		"name": "Apoorva Mundada",
+		"username": "BT24CSE147",
+		"totalScore": 30,
+		"Flash Code": 30,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,
 		"Community Contest 4": 0,
-		"avatar": "/default.png",
-		"badge": "Legend"
+		"avatar": "/default.png"
 	},
 	{
-		"name": "Priya Patel",
-		"username": "BT2XXXXXXX",
-		"totalScore": 0,
-		"Community Contest 1": 0,
-		"Community Contest 2": 0,
-		"Community Contest 3": 0,
-		"Community Contest 4": 0,
-		"avatar": "/default.png",
-		"badge": "Master"
-	},
-	{
-		"name": "Rahul Kumar",
-		"username": "BT2XXXXXXX",
-		"totalScore": 0,
-		"Community Contest 1": 0,
-		"Community Contest 2": 0,
-		"Community Contest 3": 0,
-		"Community Contest 4": 0,
-		"avatar": "/default.png",
-		"badge": "Expert"
-	},
-	{
-		"name": "Sneha Singh",
-		"username": "BT2XXXXXXX",
-		"totalScore": 0,
-		"Community Contest 1": 0,
-		"Community Contest 2": 0,
-		"Community Contest 3": 0,
-		"Community Contest 4": 0,
-		"avatar": "/default.png",
-		"badge": "Expert"
-	},
-	{
-		"name": "Amit Verma",
-		"username": "BT2XXXXXXX",
+		"name": "Prakarsh Jain",
+		"username": "BT24CSE157",
 		"totalScore": 20,
+		"Flash Code": 20,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,
-		"Community Contest 4": 20,
-		"avatar": "/default.png",
-		"badge": "Specialist"
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Ameya Deshmukh",
+		"username": "BT24CSE160",
+		"totalScore": 10,
+		"Flash Code": 10,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Lokesh Chaudhari",
+		"username": "BT24CSE214",
+		"totalScore": 30,
+		"Flash Code": 30,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Samyaak Jain",
+		"username": "BT25CSH048",
+		"totalScore": 20,
+		"Flash Code": 20,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Jayant Madhwal",
+		"username": "BT25CSE082",
+		"totalScore": 10,
+		"Flash Code": 10,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Sreecharan Kesireddy",
+		"username": "BT24CSE079",
+		"totalScore": 30,
+		"Flash Code": 30,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Aditya Singh",
+		"username": "BT24CSH051",
+		"totalScore": 20,
+		"Flash Code": 20,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Prathamesh Prabhu",
+		"username": "BT24CSE141",
+		"totalScore": 10,
+		"Flash Code": 10,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
 	}
 ]

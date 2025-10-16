@@ -7,11 +7,11 @@
     "bio": "Undefeated in 'Mini Militia'",
     "avatar": "/profile_pictures/Shubham_Jee_Shrivastava_photo.jpeg",
     "interests": ["Mini Militia", "Algorithms", "CP", "Hackathons"],
-    "achievements": ["Specialist @ Codeforces", "4 ⭐ @ Codechef"],
+    "achievements": ["Specialist @ Codeforces", "4 ⭐ @ Codechef", "Knight @ Leetcode"],
     "social": {
-      "email": "bt23csdxxx@iiitn.ac.in",
-      "linkedin": "#",
-      "github": "#"
+      "email": "bt23csd033@iiitn.ac.in",
+      "linkedin": "https://www.linkedin.com/in/shubham-jee-shrivastava-29358a294",
+      "github": "https://github.com/ShubhamJeeShrivastava"
     }
   },
   {
@@ -24,9 +24,11 @@
     "interests": ["Badminton", "Table Tennis", "CP"],
     "achievements": ["Candidate Master @ Codeforces", "6 ⭐ @ Codechef","Guardian @ Leetcode","ICPC and IICPC Regionalist"],
     "social": {
-      "email": "bt23cse106@iiitn.ac.in",
       "linkedin": "https://www.linkedin.com/in/om-amar/",
-      "github": "https://github.com/OmAmar106"
+      "github": "https://github.com/OmAmar106",
+      "codechef": "https://codechef.com/users/onedayi6star",
+      "codeforces": "https://codeforces.com/profile/DeadMan69",
+      "leetcode": "https://leetcode.com/u/OmAmar"
     }
   }
 ]
