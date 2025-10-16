@@ -32,9 +32,9 @@ const Home = () => {
 		.slice(0, 3);
 
 	const stats = [
-		{ label: "Active Members", value: "250+", icon: Users },
-		{ label: "Problems Solved", value: "1,500+", icon: Code },
-		{ label: "Contests Hosted", value: "25+", icon: Trophy },
+		{ label: "Active Members", value: "15+", icon: Users },
+		{ label: "Students Learning", value: "1,000+", icon: Code },
+		{ label: "Contests Hosted", value: "15+", icon: Trophy },
 		{ label: "Events Organized", value: "50+", icon: Calendar }
 	];
 
@@ -148,7 +148,7 @@ const Home = () => {
 									</span>
 									<div className="flex items-center text-muted-foreground text-sm">
 										<Users className="w-4 h-4 mr-1" />
-										{event.participants}
+										100+
 									</div>
 								</div>
 

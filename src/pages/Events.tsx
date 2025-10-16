@@ -26,14 +26,14 @@ const Events = () => {
 		}
 	};
 
-	const formatDate = (dateString: string) => {
-		const date = new Date(dateString);
-		return date.toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
-		});
-	};
+	// const formatDate = (dateString: string) => {
+	// 	const date = new Date(dateString);
+	// 	const day = String(date.getDate()).padStart(2, '0');
+	// 	const month = String(date.getMonth() + 1).padStart(2, '0');
+	// 	const year = date.getFullYear();
+	// 	return `${day}-${month}-${year}`;
+	// };
+
 
 	const filteredEvents = events.filter(event => {
 		const matchesTab = event.status === activeTab;
@@ -41,13 +41,19 @@ const Events = () => {
 		return matchesTab && matchesType;
 	});
 
+	const parseDate = (dateStr: string) => {
+		const [day, month, year] = dateStr.split('-').map(Number);
+		return new Date(year, month - 1, day);
+	};
+
 	const sortedEvents = filteredEvents.sort((a, b) => {
-		if (activeTab === "upcoming") {
-			return new Date(a.date).getTime() - new Date(b.date).getTime();
+		if (activeTab !== "upcoming") {
+			return parseDate(a.date).getTime() - parseDate(b.date).getTime();
 		} else {
-			return new Date(b.date).getTime() - new Date(a.date).getTime();
+			return parseDate(b.date).getTime() - parseDate(a.date).getTime();
 		}
 	});
+
 
 	return (
 		<div className="min-h-screen pt-20 px-4">
@@ -124,7 +130,7 @@ const Events = () => {
 							<div className="space-y-3 mb-4">
 								<div className="flex items-center text-sm">
 									<Calendar className="w-4 h-4 mr-2 text-accent" />
-									<span>{formatDate(event.date)}</span>
+									<span>{(event.date)}</span>
 								</div>
 								<div className="flex items-center text-sm">
 									<Clock className="w-4 h-4 mr-2 text-accent" />
@@ -134,10 +140,10 @@ const Events = () => {
 									<MapPin className="w-4 h-4 mr-2 text-accent" />
 									<span>{event.location}</span>
 								</div>
-								<div className="flex items-center text-sm">
+								{/* <div className="flex items-center text-sm">
 									<Users className="w-4 h-4 mr-2 text-accent" />
 									<span>{event.participants}/{event.maxParticipants} participants</span>
-								</div>
+								</div> */}
 							</div>
 
 							<div className="text-sm text-muted-foreground mb-4">
@@ -153,7 +159,7 @@ const Events = () => {
 							</div>
 
 							<div className="mb-4">
-								<div className="flex justify-between text-sm mb-1">
+								{/* <div className="flex justify-between text-sm mb-1">
 									<span>Participation</span>
 									<span>{Math.round((event.participants / event.maxParticipants) * 100)}%</span>
 								</div>
@@ -162,19 +168,22 @@ const Events = () => {
 										className="h-2 bg-gradient-primary rounded-full transition-all duration-300"
 										style={{ width: `${(event.participants / event.maxParticipants) * 100}%` }}
 									></div>
-								</div>
+								</div> */}
 							</div>
+							<a href={event.url} target="_blank" rel="noopener noreferrer" className="w-full">
 
-							{event.status === "upcoming" ? (
-								<Button className="w-full bg-gradient-primary hover:opacity-90">
-									Register Now
-									<ArrowRight className="w-4 h-4 ml-2" />
-								</Button>
-							) : (
-								<Button variant="outline" className="w-full border-glass-border/50 hover:bg-glass-card/50">
-									View Details
-								</Button>
-							)}
+								{event.status === "upcoming" ? (
+									<Button className="w-full bg-gradient-primary hover:opacity-90">
+										Register Now
+										<ArrowRight className="w-4 h-4 ml-2" />
+									</Button>
+								) : (
+									<Button variant="outline" className="w-full border-glass-border/50 hover:bg-glass-card/50">
+										View Details
+									</Button>
+
+								)}
+							</a>
 						</Card>
 					))}
 				</div>

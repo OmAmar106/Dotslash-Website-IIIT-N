@@ -16,7 +16,7 @@ const About = () => {
 	return (
 		<div className="min-h-screen pt-20 px-4">
 			<div className="max-w-7xl mx-auto">
-				{/* Header */}
+
 				<div className="text-center mb-16">
 					<h1 className="text-4xl font-bold text-gradient mb-4">About <span className="dotslash-gradient">
 						Dotslash &lt;./&gt;
@@ -27,36 +27,23 @@ const About = () => {
 					</p>
 				</div>
 
-				{/* Mission & Vision */}
 				<div className="grid md:grid-cols-2 gap-8 mb-16">
 					<Card className="glass-card p-8">
 						<h2 className="text-2xl font-bold text-gradient mb-4">Our Mission</h2>
 						<p className="text-muted-foreground leading-relaxed">
-							To create an inclusive learning environment where students can develop their programming skills,
-							engage in competitive coding, and collaborate on innovative projects that solve real-world problems.
+							To create an inclusive learning environment where students can develop their programming skills and 
+							engage in competitive coding.
 						</p>
 					</Card>
 					<Card className="glass-card p-8">
 						<h2 className="text-2xl font-bold text-gradient mb-4">Our Vision</h2>
 						<p className="text-muted-foreground leading-relaxed">
 							To be the leading coding community that produces skilled programmers, innovative thinkers,
-							and future tech leaders who contribute meaningfully to the technology industry.
+							and future competitive programmers.
 						</p>
 					</Card>
 				</div>
 
-				{/* Club Statistics */}
-				<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-					{clubStats.map((stat, index) => (
-						<Card key={index} className="glass-card p-6 text-center group hover:glow-effect transition-all duration-300">
-							<stat.icon className="w-12 h-12 mx-auto mb-4 text-accent group-hover:scale-110 transition-transform" />
-							<div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
-							<div className="text-muted-foreground">{stat.label}</div>
-						</Card>
-					))}
-				</div>
-
-				{/* Team Members */}
 				<div className="mb-16">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl font-bold text-gradient mb-4">Meet Our Team</h2>
@@ -68,7 +55,6 @@ const About = () => {
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{teamMembers.map((member) => (
 							<Card key={member.id} className="glass-card p-6 hover:glow-effect transition-all duration-300 group">
-								{/* Avatar and Role */}
 								<div className="text-center mb-4">
 									<img
 										src={member.avatar}
@@ -86,25 +72,23 @@ const About = () => {
 									)}
 								</div>
 
-								{/* Bio */}
 								<p className="text-muted-foreground text-sm leading-relaxed mb-4">
 									{member.bio}
 								</p>
 
 								{member.interests && member.interests.length > 0 && (
-								<div className="mb-4">
-									<p className="text-sm font-medium mb-2">Interests:</p>
-									<div className="flex flex-wrap gap-1">
-									{member.interests.map((interest, index) => (
-										<Badge key={index} variant="secondary" className="text-xs">
-										{interest}
-										</Badge>
-									))}
+									<div className="mb-4">
+										<p className="text-sm font-medium mb-2">Interests:</p>
+										<div className="flex flex-wrap gap-1">
+											{member.interests.map((interest, index) => (
+												<Badge key={index} variant="secondary" className="text-xs">
+													{interest}
+												</Badge>
+											))}
+										</div>
 									</div>
-								</div>
 								)}
 
-								{/* Achievements */}
 								{member.achievements && (
 									<div className="mb-4">
 										<p className="text-sm font-medium mb-2">Achievements:</p>
@@ -119,7 +103,6 @@ const About = () => {
 									</div>
 								)}
 
-								{/* Social Links */}
 								<div className="flex justify-center space-x-3 pt-4 border-t border-glass-border/30">
 									<Button size="sm" variant="outline" className="p-2">
 										<Mail className="w-4 h-4" />
@@ -136,35 +119,20 @@ const About = () => {
 					</div>
 				</div>
 
-				{/* What We Do */}
-				<div className="mb-16">
-					<h2 className="text-3xl font-bold text-gradient text-center mb-8">What We Do</h2>
-					<div className="grid md:grid-cols-3 gap-8">
-						<Card className="glass-card p-6 text-center">
-							<div className="text-4xl mb-4">🏆</div>
-							<h3 className="text-xl font-semibold mb-3">Competitive Programming</h3>
-							<p className="text-muted-foreground">
-								Regular contests, training sessions, and participation in national level competitions.
-							</p>
+
+				
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+					{clubStats.map((stat, index) => (
+						<Card key={index} className="glass-card p-6 text-center group hover:glow-effect transition-all duration-300">
+							<stat.icon className="w-12 h-12 mx-auto mb-4 text-accent group-hover:scale-110 transition-transform" />
+							<div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
+							<div className="text-muted-foreground">{stat.label}</div>
 						</Card>
-						<Card className="glass-card p-6 text-center">
-							<div className="text-4xl mb-4">💻</div>
-							<h3 className="text-xl font-semibold mb-3">Workshops & Training</h3>
-							<p className="text-muted-foreground">
-								Hands-on workshops on latest technologies, frameworks, and programming languages.
-							</p>
-						</Card>
-						<Card className="glass-card p-6 text-center">
-							<div className="text-4xl mb-4">🚀</div>
-							<h3 className="text-xl font-semibold mb-3">Project Development</h3>
-							<p className="text-muted-foreground">
-								Collaborative projects, hackathons, and open-source contributions.
-							</p>
-						</Card>
-					</div>
+					))}
 				</div>
 
-				{/* Join Us */}
+
+
 				<Card className="glass-card p-8 text-center">
 					<h2 className="text-2xl font-bold text-gradient mb-4">Want to Join Our Team?</h2>
 					<p className="text-muted-foreground mb-6 max-w-2xl mx-auto">

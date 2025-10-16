@@ -1,97 +1,99 @@
 [
     {
         "id": 1,
-        "title": "Competitive Programming Workshop",
-        "description": "Learn advanced algorithms and data structures for competitive programming.",
-        "date": "20-12-2024",
-        "time": "2:00 PM - 5:00 PM",
-        "location": "CS Lab 1, IIIT Nagpur",
+        "title": "Winter of Code",
+        "description": "Get Personally Mentored by a 2nd/3rd Year Senior Regarding CP/DSA Doubts.",
+        "date": "01-12-2025",
+        "time": "-",
+        "location": "Online",
         "type": "workshop",
         "status": "upcoming",
-        "participants": 45,
-        "maxParticipants": 60,
-        "instructor": "Dr. Rajesh Kumar",
+        "instructor": "Senior",
         "tags": [
             "Algorithms",
             "DSA",
             "CP"
         ],
-        "image": "🏆"
+        "image": "💻",
+        "url":""
     },
     {
         "id": 2,
-        "title": "Hack-a-thon 2024",
-        "description": "24-hour hackathon to build innovative solutions for real-world problems.",
-        "date": "25-12-2024",
-        "time": "9:00 AM - 9:00 PM",
-        "location": "Main Auditorium, IIIT Nagpur",
-        "type": "competition",
+        "title": "Inception of Code",
+        "description": "Get Tailored Weekly Assignment and Problem Sheets based on different levels.",
+        "date": "31-10-2025",
+        "time": "-",
+        "location": "Online",
+        "type": "workshop",
         "status": "upcoming",
-        "participants": 120,
-        "maxParticipants": 150,
-        "instructor": "Dotslash Team",
+        "instructor": "Dotslash Community",
         "tags": [
-            "Hackathon",
-            "Innovation",
-            "Team Work"
+            "Algorithms",
+            "DSA",
+            "CP"
         ],
-        "image": "💻"
+        "image": "💻",
+        "url":""
     },
     {
-        "id": 4,
-        "title": "AI/ML Workshop Series",
-        "description": "Introduction to machine learning concepts and practical implementations.",
-        "date": "15-11-2024",
-        "time": "3:00 PM - 6:00 PM",
-        "location": "AI Lab, IIIT Nagpur",
-        "type": "workshop",
+        "id": 3,
+        "title": "Algorithmia 2025",
+        "description": "Algorithmia is a prestigious ICPC-style coding competition. Contest Link of Round 1 and 2 is in resources.",
+        "date": "9-10-2025",
+        "time": "11:00 PM - 4:00 AM",
+        "location": "Seminar Hall, IIIT Nagpur",
+        "type": "competition",
         "status": "completed",
-        "participants": 95,
-        "maxParticipants": 100,
-        "instructor": "Arjun Patel",
+        "instructor": "Dotslash Community",
         "tags": [
-            "AI",
-            "ML",
-            "Python"
+            "Algorithms",
+            "DSA",
+            "CP",
+            "ICPC",
+            "Contest",
+            "CF"
         ],
-        "image": "🤖"
+        "image": "🏆",
+        "url":"https://codeforces.com/blog/entry/146914"
     },
     {
         "id": 5,
-        "title": "Code Golf Championship",
-        "description": "Write the shortest code possible to solve programming challenges.",
-        "date": "10-11-2024",
-        "time": "7:00 PM - 10:00 PM",
+        "title": "CodeFiesta 2025",
+        "description": "DSA Oriented Individual Coding Competition on GeeksforGeeks open to all.",
+        "date": "11-10-2025",
+        "time": "8:00 PM - 10:00 PM",
         "location": "Online",
         "type": "competition",
         "status": "completed",
-        "participants": 134,
-        "maxParticipants": 200,
         "instructor": "Dotslash Community",
         "tags": [
-            "Code Golf",
-            "Fun",
-            "Creativity"
+            "Algorithms",
+            "DSA",
+            "Contest",
+            "GFG"
         ],
-        "image": "⛳"
+        "image": "🏆",
+        "url":"https://unstop.com/competitions/codefiesta-tantrafiesta25-iiitn-1560180"
     },
     {
         "id": 6,
-        "title": "Open Source Contribution Drive",
-        "description": "Learn how to contribute to open source projects and make your first PR.",
-        "date": "25-10-2024",
-        "time": "4:00 PM - 7:00 PM",
-        "location": "CS Lab 1, IIIT Nagpur",
-        "type": "workshop",
+        "title": "FlashCode 2025",
+        "description": "Individual Participating Competition with 3 Mini Coding Games exclusively for 1st and 2nd Year.",
+        "date": "10-10-2025",
+        "time": "10:00 AM - 5:00 PM",
+        "location": "Seminal Hall, IIIT Nagpur",
+        "type": "competition",
         "status": "completed",
-        "participants": 67,
-        "maxParticipants": 80,
-        "instructor": "Priya Singh",
+        "instructor": "Dotslash Community",
         "tags": [
-            "Open Source",
-            "Git",
-            "GitHub"
+            "Algorithms",
+            "DSA",
+            "CP",
+            "Contest",
+            "CF",
+            "Quiz"
         ],
-        "image": "🌐"
+        "image": "🏆",
+        "url":"https://unstop.com/hackathons/flash-code-tantrafiesta25-iiitn-1557229"
     }
 ]

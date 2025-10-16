@@ -1,92 +1,103 @@
 [
     {
         "id": 1,
-        "title": "Data Structures and Algorithms Fundamentals",
-        "description": "Learn the basics of DSA with interactive examples and practice problems.",
-        "level": "beginner",
-        "type": "video",
-        "duration": "45 min",
-        "url": "#",
-        "downloadUrl": "#",
-        "tags": [
-            "DSA",
-            "Arrays",
-            "Linked Lists"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Advanced Graph Algorithms",
-        "description": "Master complex graph algorithms including shortest path and minimum spanning tree.",
-        "level": "advanced",
-        "type": "blog",
-        "duration": "30 min read",
-        "url": "#",
-        "downloadUrl": "#",
-        "tags": [
-            "Graphs",
-            "Algorithms",
-            "Competition"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Dynamic Programming Patterns",
-        "description": "Comprehensive guide to DP patterns with solved examples and practice problems.",
+        "title": "CSES ProblemSet",
+        "description": "A Problemset with problem levels from beginner to advanced.",
         "level": "intermediate",
-        "type": "video",
-        "duration": "1h 20min",
-        "url": "#",
-        "downloadUrl": "#",
-        "tags": [
-            "DP",
-            "Optimization",
-            "Problem Solving"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Web Development with React",
-        "description": "Build modern web applications using React, TypeScript, and modern tools.",
-        "level": "intermediate",
-        "type": "course",
-        "duration": "3h 45min",
-        "url": "#",
-        "downloadUrl": "#",
-        "tags": [
-            "React",
-            "TypeScript",
-            "Web Dev"
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Competitive Programming Handbook",
-        "description": "Complete guide to competitive programming with strategies and techniques.",
-        "level": "beginner",
-        "type": "ebook",
-        "duration": "200 pages",
+        "type": "problem set",
+        "duration": "1 year",
         "url": "#",
         "downloadUrl": "#",
         "tags": [
             "CP",
-            "Contests",
-            "Strategies"
+            "CSES",
+            "Goat"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Competitive Programmmer's Handbook",
+        "description": "Has a bunch of theory and gives an introduction to competitive programming.",
+        "level": "intermediate",
+        "type": "book",
+        "duration": "300 pages read",
+        "url": "https://cses.fi/book/book.pdf",
+        "downloadUrl": "#",
+        "tags": [
+            "CP"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Encyclopedia of Integer Sequences(OEIS)",
+        "description": "Will you tell you about a sequence of number.",
+        "level": "intermediate",
+        "type": "tool",
+        "duration": "5 min",
+        "url": "https://oeis.org/",
+        "downloadUrl": "#",
+        "tags": [
+            "tool",
+            "Number Theory"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "CSES Solution in Python",
+        "description": "Solution to 250+ CSES Problems in Python.",
+        "level": "intermediate",
+        "type": "solution",
+        "duration": "5 min",
+        "url": "https://github.com/OmAmar106/CSES-in-Python",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "CSES"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Number Theory Blog Collection",
+        "description": "Collection of many Number Theory Blogs on Codeforces.",
+        "level": "advanced",
+        "type": "blog",
+        "duration": "50 blogs",
+        "url": "https://codeforces.com/blog/entry/144699",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "Number Theory",
+            "CF"
         ]
     },
     {
         "id": 6,
-        "title": "Machine Learning Fundamentals",
-        "description": "Introduction to ML concepts with Python implementations and real-world examples.",
-        "level": "intermediate",
-        "type": "course",
-        "duration": "2h 30min",
-        "url": "#",
+        "title": "Algorithmia 2025 Round 1 Contest",
+        "description": "Contest Invitation link of algorithmia 2025 round 1.",
+        "level": "beginner",
+        "type": "contest",
+        "duration": "8 Problems",
+        "url": "https://codeforces.com/contestInvitation/e106b013f0190ae0ca410314f0e908b9d356ee0b",
         "downloadUrl": "#",
         "tags": [
-            "ML",
-            "Python",
-            "AI"
+            "CP",
+            "Contest",
+            "CF"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Algorithmia 2025 Round 2 Contest",
+        "description": "Contest Invitation link of algorithmia 2025 round 2.",
+        "level": "beginner",
+        "type": "contest",
+        "duration": "15 Problems",
+        "url": "http://codeforces.com/contestInvitation/4f41707b8275798d9cc077796f7e19a37e88039f",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "Contest",
+            "CF"
         ]
     }
 ]

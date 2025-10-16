@@ -16,10 +16,6 @@ const Footer = () => {
 								<Mail className="w-4 h-4 text-accent" />
 								<span>dotslash@iiitn.ac.in</span>
 							</div>
-							{/* <div className="flex items-center space-x-3 text-muted-foreground">
-                <Phone className="w-4 h-4 text-accent" />
-                <span>+91 12345 67890</span>
-              </div> */}
 							<div className="flex items-center space-x-3 text-muted-foreground">
 								<MapPin className="w-4 h-4 text-accent" />
 								<span>IIIT Nagpur, Butibori, Maharashtra</span>
@@ -51,7 +47,7 @@ const Footer = () => {
 							<Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://www.instagram.com/thedotslashcommunity/", "_blank")}>
 								<Instagram className="w-4 h-4" />
 							</Button>
-							<Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://www.instagram.com/thedotslashcommunity/", "_blank")}>
+							<Button size="sm" variant="outline" className="p-2" onClick={() => window.open("https://www.linkedin.com/in/dotslash-iiitn", "_blank")}>
 								<Linkedin className="w-4 h-4" />
 							</Button>
 						</div>
