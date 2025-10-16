@@ -273,7 +273,9 @@ const Home = () => {
 													<div className="flex items-center gap-4 mt-3 text-sm">
 														<div className="flex items-center text-muted-foreground">
 															<Trophy className="w-4 h-4 mr-2 text-accent" />
-															Duration: {formatDuration(contest.duration)}
+															Duration: {contest.site === "leetcode"
+																? formatDuration(contest.duration / 60)
+																: formatDuration(contest.duration)}
 														</div>
 													</div>
 												</div>
