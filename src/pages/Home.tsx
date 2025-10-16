@@ -216,7 +216,9 @@ const Home = () => {
 									</div>
 									<div className="text-sm">{new Date(contest.startTime).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true })}</div>
 									<div className="text-sm font-medium text-accent">
-										Duration: {formatDuration(contest.duration)}
+										Duration: {contest.site === "leetcode"
+											? formatDuration(contest.duration / 60)
+											: formatDuration(contest.duration)}
 									</div>
 								</div>
 
