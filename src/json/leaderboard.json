@@ -2,8 +2,8 @@
 	{
 		"name": "Apoorva Mundada",
 		"username": "BT24CSE147",
-		"totalScore": 30,
-		"Flash Code": 30,
+		"totalScore": 40,
+		"Flash Code": 40,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,
@@ -13,8 +13,8 @@
 	{
 		"name": "Prakarsh Jain",
 		"username": "BT24CSE157",
-		"totalScore": 20,
-		"Flash Code": 20,
+		"totalScore": 40,
+		"Flash Code": 40,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,
@@ -24,8 +24,8 @@
 	{
 		"name": "Ameya Deshmukh",
 		"username": "BT24CSE160",
-		"totalScore": 10,
-		"Flash Code": 10,
+		"totalScore": 30,
+		"Flash Code": 30,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,
@@ -46,28 +46,6 @@
 	{
 		"name": "Samyaak Jain",
 		"username": "BT25CSH048",
-		"totalScore": 20,
-		"Flash Code": 20,
-		"Community Contest 1": 0,
-		"Community Contest 2": 0,
-		"Community Contest 3": 0,
-		"Community Contest 4": 0,
-		"avatar": "/default.png"
-	},
-	{
-		"name": "Jayant Madhwal",
-		"username": "BT25CSE082",
-		"totalScore": 10,
-		"Flash Code": 10,
-		"Community Contest 1": 0,
-		"Community Contest 2": 0,
-		"Community Contest 3": 0,
-		"Community Contest 4": 0,
-		"avatar": "/default.png"
-	},
-	{
-		"name": "Sreecharan Kesireddy",
-		"username": "BT24CSE079",
 		"totalScore": 30,
 		"Flash Code": 30,
 		"Community Contest 1": 0,
@@ -77,8 +55,8 @@
 		"avatar": "/default.png"
 	},
 	{
-		"name": "Aditya Singh",
-		"username": "BT24CSH051",
+		"name": "Jayant Madhwal",
+		"username": "BT25CSE082",
 		"totalScore": 20,
 		"Flash Code": 20,
 		"Community Contest 1": 0,
@@ -88,10 +66,21 @@
 		"avatar": "/default.png"
 	},
 	{
-		"name": "Prathamesh Prabhu",
-		"username": "BT24CSE141",
-		"totalScore": 10,
-		"Flash Code": 10,
+		"name": "Sreecharan Kesireddy",
+		"username": "BT24CSE079",
+		"totalScore": 50,
+		"Flash Code": 50,
+		"Community Contest 1": 0,
+		"Community Contest 2": 0,
+		"Community Contest 3": 0,
+		"Community Contest 4": 0,
+		"avatar": "/default.png"
+	},
+	{
+		"name": "Aditya Singh",
+		"username": "BT24CSH051",
+		"totalScore": 50,
+		"Flash Code": 50,
 		"Community Contest 1": 0,
 		"Community Contest 2": 0,
 		"Community Contest 3": 0,

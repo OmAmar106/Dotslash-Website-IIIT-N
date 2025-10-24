@@ -2,12 +2,21 @@
   {
     "id": 1,
     "name": "Shubham Jee Shrivastava",
-    "role": "Club Head",
+    "role": "Club Lead",
     "department": "3rd Year CSD",
     "bio": "Undefeated in 'Mini Militia'",
     "avatar": "/profile_pictures/Shubham_Jee_Shrivastava_photo.jpeg",
-    "interests": ["Mini Militia", "Algorithms", "CP", "Hackathons"],
-    "achievements": ["Specialist @ Codeforces", "4 ⭐ @ Codechef", "Knight @ Leetcode"],
+    "interests": [
+      "Mini Militia",
+      "Algorithms",
+      "CP",
+      "Hackathons"
+    ],
+    "achievements": [
+      "Specialist @ Codeforces",
+      "4 ⭐ @ Codechef",
+      "Knight @ Leetcode"
+    ],
     "social": {
       "email": "bt23csd033@iiitn.ac.in",
       "linkedin": "https://www.linkedin.com/in/shubham-jee-shrivastava-29358a294",
@@ -17,18 +26,219 @@
   {
     "id": 2,
     "name": "Om Amar",
-    "role": "Core Member",
+    "role": "Senior Core Member",
     "year": "3rd Year CSE",
     "bio": "Love doing Competitive Programming in Python ;)",
     "avatar": "/profile_pictures/Om_Amar_photo.jpeg",
-    "interests": ["Badminton", "Table Tennis", "CP"],
-    "achievements": ["Candidate Master @ Codeforces", "6 ⭐ @ Codechef","Guardian @ Leetcode","ICPC and IICPC Regionalist"],
+    "interests": [
+      "Badminton",
+      "Table Tennis",
+      "CP"
+    ],
+    "achievements": [
+      "Candidate Master @ Codeforces",
+      "6 ⭐ @ Codechef",
+      "Guardian @ Leetcode",
+      "ICPC and IICPC Regionalist"
+    ],
     "social": {
       "linkedin": "https://www.linkedin.com/in/om-amar/",
       "github": "https://github.com/OmAmar106",
       "codechef": "https://codechef.com/users/onedayi6star",
       "codeforces": "https://codeforces.com/profile/DeadMan69",
       "leetcode": "https://leetcode.com/u/OmAmar"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Sreecharan Kesireddy",
+    "role": "Core Member",
+    "year": "2nd Year CSE",
+    "bio": "Loves doing !(Development) ",
+    "avatar": "/profile_pictures/Sreecharan_Kesireddy_photo.jpeg",
+    "interests": [
+      "Anime ",
+      " DSA ",
+      " CP ",
+      " Video Games"
+    ],
+    "achievements": [
+      "3 🌟 @Codechef ",
+      " 1646 @Leetcode ",
+      " #32 in IIITN @GFG"
+    ],
+    "social": {
+      "email": "sreecharan.kesireddy@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/sreecharan-kesireddy-718208324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "github": "https://github.com/Sreecharan1703",
+      "codechef": "https://www.codechef.com/users/sreecharan_17",
+      "codeforces": "https://codeforces.com/profile/Lunar_Dragon",
+      "leetcode": "https://leetcode.com/u/sreecharan_17/"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Chetan Luna",
+    "role": "Senior Core Member",
+    "year": "3rd Year CSH",
+    "bio": "Calculus is my comfort zone",
+    "avatar": "/profile_pictures/Chetan_Luna_photo.jpeg",
+    "interests": [
+      "Maths ",
+      "CP",
+      "Swimming"
+    ],
+    "achievements": [
+      "Specialist on Codeforces",
+      "4 star on Codechef"
+    ],
+    "social": {
+      "email": "chetanluna0509@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/chetan-luna-261036307/",
+      "github": "",
+      "codechef": "https://www.codechef.com/users/chet1398",
+      "codeforces": "https://codeforces.com/profile/Chet1398",
+      "leetcode": "https://leetcode.com/u/chetanluna/"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Abdul Faheem",
+    "role": "Design Lead",
+    "year": "2nd Year CSH",
+    "bio": "Debugs, playlists, comics, and a bit of design.",
+    "avatar": "/profile_pictures/Abdul_Faheem_photo.jpeg",
+    "interests": [
+      "Comics",
+      " Algorithms",
+      " UI/UX"
+    ],
+    "achievements": [
+    ],
+    "social": {
+      "email": "faheemabdul4663@gmail.com",
+      "linkedin": "www.linkedin.com/in/faheem-abdul-07624527b",
+      "github": "",
+      "codechef": "",
+      "codeforces": "",
+      "leetcode": ""
+    }
+  },
+  {
+    "id": 6,
+    "name": "Apoorva Mundada",
+    "role": "Core Member",
+    "year": "2nd Year CSE",
+    "bio": "I open LeetCode if I'm bored :')",
+    "avatar": "/profile_pictures/Apoorva_Mundada_photo.jpeg",
+    "interests": [
+      "Problem Solving",
+      " CP",
+      " Food",
+      " Money 💸"
+    ],
+    "achievements": [
+      "3 star @ codechef"
+    ],
+    "social": {
+      "email": "apoorva.aam@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/apoorva-mundada/",
+      "github": "https://github.com/DoonMad",
+      "codechef": "https://www.codechef.com/users/moondad",
+      "codeforces": "https://codeforces.com/profile/doonmad",
+      "leetcode": "https://leetcode.com/u/DoonMad/"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Paramjeet Rathore",
+    "role": "Management Lead",
+    "year": "2nd Year ECE",
+    "bio": "Currently debugging my life",
+    "avatar": "/profile_pictures/Paramjeet_Rathore_photo.jpeg",
+    "interests": [
+      "Football ",
+      " Mobile Games ",
+      " Hackathons"
+    ],
+    "achievements": [
+    ],
+    "social": {
+      "email": "bt24ece016@iiitn.ac.in",
+      "linkedin": "https://www.linkedin.com/in/paramjeet-rathore-8880a837b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "github": "",
+      "codechef": "",
+      "codeforces": "",
+      "leetcode": ""
+    }
+  },
+  {
+    "id": 8,
+    "name": "Suraj Pratap Singh",
+    "role": "Social Media Lead",
+    "year": "2nd Year CSH",
+    "bio": "",
+    "avatar": "/profile_pictures/Suraj_Pratap_Singh_photo.jpeg",
+    "interests": [
+      "Editing",
+      "videography"
+    ],
+    "achievements": [
+    ],
+    "social": {
+      "email": "bt24csh041@iiitn.ac.in",
+      "linkedin": "",
+      "github": "",
+      "codechef": "",
+      "codeforces": "",
+      "leetcode": ""
+    }
+  },
+  {
+    "id": 9,
+    "name": "Sambodhi Bhowal",
+    "role": "Club Co-Lead",
+    "year": "2nd Year CSD",
+    "bio": "cp karna hai bas",
+    "avatar": "/profile_pictures/Sambodhi_Bhowal_photo.jpeg",
+    "interests": [
+      "CP",
+      "DEV"
+    ],
+    "achievements": [
+      "pupil (1380)@codeforces",
+      "3⭐@codechef"
+    ],
+    "social": {
+      "email": "sambodhibhowal@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/sambodhi7/",
+      "github": "https://github.com/sambodhi7",
+      "codechef": "https://www.codechef.com/users/sambodhi7",
+      "codeforces": "https://codeforces.com/profile/sambodhi7",
+      "leetcode": "https://leetcode.com/u/sambodhibhowal/"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Prakarsh Praveen Jain",
+    "role": "Corporate Lead",
+    "year": "2nd Year CSE",
+    "bio": "I code until the Fun becomes Pain & I am a RCB Fan ... so Pain is Permanent",
+    "avatar": "/profile_pictures/Prakarsh_Praveen_Jain_photo.jpeg",
+    "interests": [
+      "CP","ML","Cricket","Chess","Clash of Clans"
+    ],
+    "achievements": [
+      "2⭐ @ Codechef",
+      "1500+ @ Chess.com",
+      "10 SGPA"
+    ],
+    "social": {
+      "email": "bt24cse157@iiitn.ac.in",
+      "linkedin": "https://www.linkedin.com/in/prakarsh-jain-972530330/",
+      "codechef": "https://www.codechef.com/users/pjlive05",
+      "codeforces": "https://codeforces.com/profile/PJ_LIVE05",
+      "leetcode": "https://leetcode.com/u/PJLIVE05/"
     }
   }
 ]
