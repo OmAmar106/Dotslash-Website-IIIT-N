@@ -240,5 +240,30 @@
       "codeforces": "https://codeforces.com/profile/PJ_LIVE05",
       "leetcode": "https://leetcode.com/u/PJLIVE05/"
     }
+  },
+  {
+    "id": 11,
+    "name": "Tanay Umre",
+    "role": "Senior Core Member",
+    "year": "3rd Year CSE",
+    "bio": "I code until the Fun becomes Pain & I am a RCB Fan ... so Pain is Permanent",
+    "avatar": "/profile_pictures/Tanay_Umre_photo.jpeg",
+    "interests": [
+      "CP","Cricket","COC"
+    ],
+    "achievements": [
+      "3 ⭐ @Codechef",      
+      "1744 @Leetcode",
+      "594 @Atcoder",
+      "1184 @Codeforces"
+    ],
+    "social": {
+      "email": "tanayumre@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/tanay-umre/",
+      "github": "https://github.com/TanayUmre",
+      "codechef": "https://www.codechef.com/users/tu1235",
+      "codeforces": "https://codeforces.com/profile/TANAY1235",
+      "leetcode": "https://leetcode.com/u/TANAY_UMRE/"
+    }
   }
 ]
