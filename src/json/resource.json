@@ -99,5 +99,62 @@
             "Contest",
             "CF"
         ]
+    },
+    {
+        "id": 8,
+        "title": "A way to practice CP",
+        "description": "Contains different practice strategies for different ratings.",
+        "level": "all",
+        "type": "pdf",
+        "duration": "19 pages",
+        "url": "https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view?usp=sharing",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "Contest",
+            "CF",
+            "Practice"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "USACO Guid",
+        "description": "Contains most of the concepts used.",
+        "level": "all",
+        "type": "website",
+        "duration": "inf time",
+        "url": "https://usaco.guide/",
+        "downloadUrl": "#",
+        "tags": [
+            "CP",
+            "Problems",
+            "Practice"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "youkno0wwho Topis List",
+        "description": "Topic wise problems",
+        "level": "all",
+        "type": "website",
+        "duration": "inf time",
+        "url": "https://youkn0wwho.academy/topic-list",
+        "downloadUrl": "#",
+        "tags": [
+            "Problems"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "A2OJ Ladder",
+        "description": "Rating wise problems",
+        "level": "all",
+        "type": "website",
+        "duration": "inf time",
+        "url": "https://earthshakira.github.io/a2oj-clientside/server/Ladders.html",
+        "downloadUrl": "#",
+        "tags": [
+            "Problems"
+        ]
     }
 ]
